@@ -1,0 +1,60 @@
+header{
+  font-size: small;
+  color: white;
+  background-color: #333;
+}
+
+h1{
+  padding: 10px;
+  padding-bottom: 30px;
+  font-size: large;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: black;
+}
+
+nav a{
+  color: #fff;
+  display: grid;
+  text-decoration: none;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+h2{
+  font-weight: 400;
+  font-size: medium;
+}
+
+.main{
+  background-color: grey;
+  padding: 10px;
+  padding-bottom: 200px;
+}
+
+.aside{
+  padding: 10px;
+}
+
+h3{
+  display: flex;
+  padding: 10px;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: medium;
+  justify-content: center;
+}
+
+footer{
+  background-color: #333;
+  padding-bottom: 100px;
+  color: #fff;
+}
+
