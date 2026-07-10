@@ -57,3 +57,7 @@ footer{
   color: #fff;
 }
 
+ul{
+  display: flex;
+  justify-content: space-around;
+}
