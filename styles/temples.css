@@ -12,10 +12,6 @@ nav{
     font-size: larger;
 }
 
-nav{
-    display: inline-flex;
-}
-
 nav a:hover{
     text-decoration: overline;
 }
