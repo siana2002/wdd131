@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="Douglas Tangis page">
+    <meta name="author" content="Douglas Tangi">
+
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <!-- JAVASCRIPT LINKS -->
+    <script src="scripts/place.js" defer></script>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>New Zealand</h1>
+    </header>
+    <nav></nav>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium" media="(min-width: 500px)">
+                <img src="images/hero-small.webp" alt="Adelaide Australia Temple" width="500" height="250">
+            </picture>
+        </div>
+        <div class="data">
+        <h2>Data</h2>
+        <p>Area: 587,041 sq km</p>
+        <p>Population: 5 Million</p>
+        <p>Capital: Auckland</p>
+        <p>Languages: Maori/English</p>
+        <p>Currency: New Zealand Dollar</p>
+        <p>Time Zone: UTC +0</p>
+        <p>Calling Code: +64</p>
+        <p>Internet TLD: .mg</p>
+        </div>
+        <div class="weather">
+        <h2 class="border">Weather</h2>
+        <img class="icon" src="images/weather-icon.svg" alt="Sun and Clouds" width="100px" height="75px">
+        <p>Temperature: <span id="temperature">10</span>℃</p>
+        <p>Conditions: Partly Cloudy</p>
+        <p>Wind: <span id="windSpeed">5</span>km/h</p>
+        <p>Wind Chill: <span id="windChill"></span></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> | Douglas Tangi | New Zealand</p>
+        <p class="foot" id="lastModified"></p>
+    </footer>
+</body>
+</html>
+

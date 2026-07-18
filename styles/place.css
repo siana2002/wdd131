@@ -1,0 +1,67 @@
+/* HEADER & UNIVERSAL*/
+:root{
+    --primary-color: rgb(0, 0, 128);
+    --secondary-color: rgb(225, 218, 210);
+    --accent-color: #fff;
+    --text-align: center;
+    --max-width: 100%;
+}
+
+body{
+    background-color: var(--secondary-color);
+    max-width: var(--max-width);
+}
+
+header{
+    text-align: var(--text-align);
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    padding: 10px;
+    max-width: var(--max-width);
+    height: auto;
+}
+
+nav{
+    padding: 2px;
+    background-color: var(--accent-color);
+}
+
+/* BODY */
+.hero img{
+    width: 100%;
+}
+
+.data{
+    text-align: var(--text-align);
+    padding: 10px;
+    font-size: large;
+}
+
+.weather{
+    text-align: var(--text-align);
+    padding: 10px;
+    font-size: large;
+}
+
+.border{
+    border-top: 1px solid #000;
+    padding-top: 50px;
+}
+
+/* FOOTER */
+footer{
+    display: grid;
+    justify-content: var(--text-align);
+    background-color: var(--primary-color);
+    padding: 15px;
+    color: var(--accent-color);
+}
+
+.foot{
+    text-align: var(--text-align);
+    color: var(--accent-color);
+}
+
+#currentYear{
+    display: inline;
+}
