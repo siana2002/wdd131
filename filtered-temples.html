@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Temples and Albums- Douglas Tangi</title>
+    <meta name="description" content="A page with images of temples using JavaScript, HTML and CSS"> 
+    <meta name="author" content="Douglas Tangi">
+
+    <!-- LINKS TO CSS -->
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- SCRIPTS -->
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <button id="menu"></button>
+            <p class="title">Temple Album</p>
+            <ul class="navigation">
+                <li><a id="home" href="#" title="Home">Home</a></li>
+                <li><a id="old" href="#" title="Old">Old</a></li>
+                <li><a id="new" href="#" title="New">New</a></li>
+                <li><a id="large" href="#" title="Large">Large</a></li>
+                <li><a id="small" href="#" title="Small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 id="pageTitle">Home</h1>
+    <main id="templeCards"></main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> | Douglas Tangi | New Zealand</p>
+        <p class="foot" id="lastModified"></p>
+    </footer>
+</body>
+</html>
