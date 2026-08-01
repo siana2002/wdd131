@@ -75,3 +75,10 @@ footer{
 #currentYear{
     display: inline;
 }
+
+@media (min-width: 700px) {
+    .checkbox{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
