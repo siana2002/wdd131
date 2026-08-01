@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Temples and Albums- Douglas Tangi</title>
+    <meta name="description" content="A page with images of temples using JavaScript, HTML and CSS"> 
+    <meta name="author" content="Douglas Tangi">
+
+    <!-- LINKS TO CSS -->
+    <link rel="stylesheet" href="styles/form.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- SCRIPTS -->
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <fieldset>
+                <div class="base">
+                    <label for="name">Product Name</label>
+                    <select id="product" name="productName" required>
+                        <option value="" disabled selected>Choose a product</option>
+                    </select>
+                </div>
+                <div>
+                    <legend>Overall Rating</legend>
+                    <div class="rating">
+                        <label>
+                            ⭐︎
+                            <input type="radio" id="inquiry" name="choice" required>
+                        </label>
+                        <label>
+                            ⭐︎⭐︎
+                            <input type="radio" id="inquiry" name="choice" required>
+                        </label>
+                        <label>
+                            ⭐︎⭐︎⭐︎
+                            <input type="radio" id="inquiry" name="choice" required>
+                        </label>
+                        <label>
+                            ⭐︎⭐︎⭐︎⭐︎
+                            <input type="radio" id="inquiry" name="choice" required>
+                        </label>
+                        <label>
+                            ⭐︎⭐︎⭐︎⭐︎⭐︎
+                            <input type="radio" id="inquiry" name="choice" required>
+                        </label>
+                    </div>
+                </div>
+                <div class="base">
+                    <label for="visit-date">Date of Installation</label>
+                    <input type="date" id="visit-date" name="Date of Installation" placeholder="mm/dd/yy" required>
+                </div>
+                <div class="checkbox">
+                    <legend>Which features did you find useful in the product? (Check all that apply)</legend>
+                    <label>
+                        <input type="checkbox" id="durability" name="features" value="durability" required>
+                        Durability
+                    </label><br>
+                    <label>
+                        <input type="checkbox" id="ease-of-use" name="features" value="ease-of-use">
+                        Ease of Use
+                    </label><br>
+                    <label>
+                        <input type="checkbox" id="performance" name="features" value="performance">
+                        Performance
+                    </label><br>
+                    <label>
+                        <input type="checkbox" id="design" name="features" value="design">
+                        Design
+                    </label><br>
+                </div>
+                <div class="message">
+                    <label for="message">Written Review (Optional)</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+                <div class="base">
+                    <label for="name">Your Name (Optional)</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Post Review">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> | Douglas Tangi | New Zealand</p>
+        <p class="foot" id="lastModified"></p>
+    </footer>
+</body>
+</html>
