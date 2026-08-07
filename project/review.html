@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tongan Culture | Review Page | Douglas Tangi</title>
+    <meta name="description" content="A webpage containing a review submit form where users can leave feedback. ">
+    <meta name="author" content="Douglas Tangi">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" href="styles/websites.css">
+
+    <!-- SCRIPTS -->
+    <script src="scripts/website.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <h1>THE FRIENDLY ISLANDS</h1>
+            <button id="menu-button" aria-label="Open navigation">
+                ☰
+            </button>
+            <nav id="navigation">
+                <a href="index.html">Home </a>
+                <a href="traditions-and-culture.html">Tradition / Culture</a>
+                <a href="food.html">Food</a>
+                <a href="review.html">Review</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1 id="foodTitle" >Website Review</h1>
+        <form method="get" action="evaluation.html">
+            <fieldset>
+                <div class="base">
+                    <label for="name">Name❗️</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email Address❗️</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="base">
+                    <label for="visit-date">Date of Visit❗️</label>
+                    <input type="date" id="visit-date" name="Date of Installation" required>
+                </div>
+                <div>
+                    <label>How often do you visit our website❗️</label>
+                    <div class="rating">
+                        <label for="rating1">
+                            All day long
+                            <input type="radio" id="rating1" name="rating" value="1" required>
+                        </label>
+                        <label for="rating2">
+                            More than once a day
+                            <input type="radio" id="rating2" name="rating" value="2" required>
+                        </label>
+                        <label for="rating3">
+                            Once a day
+                            <input type="radio" id="rating3" name="rating" value="3" required>
+                        </label>
+                        <label for="rating4">
+                            Several times a week
+                            <input type="radio" id="rating4" name="rating" value="4" required>
+                        </label>
+                        <label for="rating5">
+                            Once a week
+                            <input type="radio" id="rating5" name="rating" value="5" required>
+                        </label>
+                    </div>
+                </div>
+                <p>Which features did you find useful in the product? (Check all that apply)❗️</p>
+                <div class="checkbox">
+                    <label for="durability">
+                        <input type="checkbox" id="durability" name="features" value="durability" required>
+                        Durability
+                    </label><br>
+                    <label for="ease-of-use">
+                        <input type="checkbox" id="ease-of-use" name="features" value="ease-of-use">
+                        Ease of Use
+                    </label><br>
+                    <label for="performance">
+                        <input type="checkbox" id="performance" name="features" value="performance">
+                        Performance
+                    </label><br>
+                    <label for="design">
+                        <input type="checkbox" id="design" name="features" value="design">
+                        Design
+                    </label><br>
+                </div>
+                <div class="message">
+                    <label for="suggestions">Any additional foods, cultures or traditions you would like to add?</label>
+                    <textarea id="suggestions" name="suggestions" rows="5"></textarea>
+                </div>
+                <div class="message">
+                    <label for="comments">Anything else you would like to share?</label>
+                    <textarea id="comments" name="comments" rows="5"></textarea>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Post Review">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> | Douglas Tangi | New Zealand</p>
+        <p id="lastModified"></p>
+        <p id="visitCount" ></p>
+        <a href="references.html">Website References</a>
+    </footer>
+</body>
+</html>
